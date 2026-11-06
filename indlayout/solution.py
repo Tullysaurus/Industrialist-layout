@@ -211,9 +211,12 @@ class Solution:
             return None
         return trial
 
-    def compact(self, mixed_crossing=False, log=None):
+    def compact(self, mixed_crossing=False, log=None, deadline=None):
+        """Delete empty-enough rows/columns. Stops at `deadline` (time.time() value) keeping what it has."""
+        import time as _time
         if self.validate(mixed_crossing):
             return self
+        out_of_time = False
         sol = self
         removed = [0, 0]
         changed = True
@@ -224,12 +227,18 @@ class Solution:
                 lo, hi = (x0, x1) if axis == 0 else (y0, y1)
                 k = hi - 1
                 while k >= lo:
+                    if deadline is not None and _time.time() > deadline:
+                        out_of_time, changed = True, False
+                        break
                     t = sol._try_delete(axis, k, mixed_crossing)
                     if t is not None:
                         sol = t
                         removed[axis] += 1
                         changed = True
                     k -= 1
+                if out_of_time:
+                    break
         if log:
-            log(f"  compaction removed {removed[0]} columns and {removed[1]} rows")
+            log(f"  compaction removed {removed[0]} columns and {removed[1]} rows"
+                + (" (stopped: time budget)" if out_of_time else ""))
         return sol
