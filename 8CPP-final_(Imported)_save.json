@@ -1,0 +1,1321 @@
+{
+  "id": "save-mw53mkux-0",
+  "name": "8CPP-final (Imported)",
+  "timestamp": 1793987744015,
+  "data": {
+    "version": 4,
+    "nodes": [
+      {
+        "id": "n-mw2u7qhy-0",
+        "type": "recipe",
+        "recipeId": "r_coal_power_plant_01",
+        "machineCount": 8,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          1,
+          0
+        ],
+        "position": {
+          "x": 3534,
+          "y": 780
+        },
+        "settings": {
+          "coal_feed": 27.5,
+          "air": 27.5,
+          "exhaust": 10
+        },
+        "isTarget": true
+      },
+      {
+        "id": "n-mw2u82br-1",
+        "type": "recipe",
+        "recipeId": "r_exhaust_stack_01",
+        "machineCount": 0.309994243,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [],
+        "position": {
+          "x": 4104,
+          "y": 780
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2u8561-2",
+        "type": "recipe",
+        "recipeId": "r_vertical_heat_exchanger_02",
+        "machineCount": 8,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          1,
+          0
+        ],
+        "position": {
+          "x": 1178,
+          "y": 1495
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2u88xs-3",
+        "type": "recipe",
+        "recipeId": "r_modular_turbine_01",
+        "machineCount": 16,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1843,
+          "y": 1209
+        },
+        "settings": {
+          "hpt_count": 0,
+          "lpt_count": 5
+        },
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2u8keh-4",
+        "type": "recipe",
+        "recipeId": "r_steam_condenser_01",
+        "machineCount": 4,
+        "inputOrder": [
+          1,
+          0
+        ],
+        "outputOrder": [
+          0,
+          1
+        ],
+        "position": {
+          "x": 2413,
+          "y": 1248
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2u9ayy-c7",
+        "type": "recipe",
+        "recipeId": "r_mineshaft_drill_01",
+        "machineCount": 7.663233965672996,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          1,
+          2,
+          0
+        ],
+        "position": {
+          "x": 2413,
+          "y": 364
+        },
+        "settings": {
+          "depth": 6000,
+          "drill_head": "steel",
+          "acid_type": "hydrochloric",
+          "has_machine_oil": "No"
+        },
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2u9ltj-c8",
+        "type": "recipe",
+        "recipeId": "r_polisher_01",
+        "machineCount": 8,
+        "inputOrder": [
+          1,
+          2,
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 780
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08s-i9",
+        "type": "recipe",
+        "recipeId": "r_electrolysis_plant_02",
+        "machineCount": 40,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          1,
+          0
+        ],
+        "position": {
+          "x": 1178,
+          "y": 1157
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08s-ib",
+        "type": "recipe",
+        "recipeId": "r_atmospheric_distillation_plant_02",
+        "machineCount": 1.3333333333333333,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0,
+          1
+        ],
+        "position": {
+          "x": 608,
+          "y": 1248
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08s-id",
+        "type": "recipe",
+        "recipeId": "r_water_pump2_01",
+        "machineCount": 6.822580210266659,
+        "inputOrder": [],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 57,
+          "y": 910
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08s-ix",
+        "type": "recipe",
+        "recipeId": "r_tree_farm_01",
+        "machineCount": 0.9221036980514618,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1178,
+          "y": 910
+        },
+        "settings": {
+          "controller_id": "m_tree_farm_controller",
+          "tree_id": "m_tree",
+          "tree_count": 88,
+          "harvester_count": 4,
+          "sprinkler_count": 4,
+          "outputs_count": 1
+        },
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-jp",
+        "type": "recipe",
+        "recipeId": "r_blast_furnace_MK2_03",
+        "machineCount": 0.852984614502232,
+        "inputOrder": [
+          1,
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2413,
+          "y": 52
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-ka",
+        "type": "recipe",
+        "recipeId": "r_electrolysis_plant_01",
+        "machineCount": 14.814814814814822,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0,
+          1
+        ],
+        "position": {
+          "x": 608,
+          "y": 767
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-kb",
+        "type": "recipe",
+        "recipeId": "r_air_separation_unit_01",
+        "machineCount": 0.32921810699588494,
+        "inputOrder": [],
+        "outputOrder": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "position": {
+          "x": 608,
+          "y": 364
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-kr",
+        "type": "recipe",
+        "recipeId": "r_chemical_plant_15",
+        "machineCount": 0.8888888888888893,
+        "inputOrder": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1843,
+          "y": 806
+        },
+        "settings": {
+          "speed_factor": 200,
+          "efficiency_factor": 120
+        },
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-ks",
+        "type": "recipe",
+        "recipeId": "r_vaporizer_03",
+        "machineCount": 0.32921810699588494,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1178,
+          "y": 520
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-kx",
+        "type": "recipe",
+        "recipeId": "r_cooling_tower_01",
+        "machineCount": 3.9716666666666667,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 1547
+        },
+        "settings": {
+          "distilled_water_temp": 45.83718309859154
+        },
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-lo",
+        "type": "recipe",
+        "recipeId": "r_lathe_03",
+        "machineCount": 0.9085043231384701,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 5206,
+          "y": 468
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08u-lu",
+        "type": "recipe",
+        "recipeId": "r_blast_furnace_MK2_04",
+        "machineCount": 1.0599217103282152,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 4655,
+          "y": 247
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ub08v-oc",
+        "type": "recipe",
+        "recipeId": "r_paper_mill_02",
+        "machineCount": 0.015499712149999567,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1843,
+          "y": 1612
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2ubv1o-rb",
+        "type": "recipe",
+        "recipeId": "r_advanced_coal_drill_01",
+        "machineCount": 1.2399769719999938,
+        "inputOrder": [],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 1833
+        },
+        "settings": {},
+        "isTarget": false
+      },
+      {
+        "id": "n-mw2udm9d-u9",
+        "type": "recipe",
+        "recipeId": "r_ingot_molder_03",
+        "machineCount": 10.599217103282152,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 4104,
+          "y": 299
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2udr4l-ua",
+        "type": "recipe",
+        "recipeId": "r_electric_furnace_06",
+        "machineCount": 7.570869359487251,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 3534,
+          "y": 299
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ue5bg-uc",
+        "type": "recipe",
+        "recipeId": "r_blast_furnace_13",
+        "machineCount": 4.037796991726534,
+        "inputOrder": [
+          0,
+          1
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 273
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2uf71a-ud",
+        "type": "recipe",
+        "recipeId": "r_advanced_assembler_13",
+        "machineCount": 0.309994243,
+        "inputOrder": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 3534,
+          "y": 1781
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ufqm2-ue",
+        "type": "recipe",
+        "recipeId": "r_quarry_02",
+        "machineCount": 0.04133256573333333,
+        "inputOrder": [],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 2080
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ug28t-uf",
+        "type": "recipe",
+        "recipeId": "r_roller_02",
+        "machineCount": 0.2479953944,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2983,
+          "y": 2327
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ug4x4-ug",
+        "type": "recipe",
+        "recipeId": "r_press_02",
+        "machineCount": 0.2479953944,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 2413,
+          "y": 2327
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ug783-uh",
+        "type": "recipe",
+        "recipeId": "r_ingot_molder_03",
+        "machineCount": 0.1239976972,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1843,
+          "y": 2327
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2uggtn-uj",
+        "type": "recipe",
+        "recipeId": "r_electric_furnace_02",
+        "machineCount": 0.619988486,
+        "inputOrder": [
+          0
+        ],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 1178,
+          "y": 2327
+        },
+        "settings": {}
+      },
+      {
+        "id": "n-mw2ugjq2-uk",
+        "type": "recipe",
+        "recipeId": "r_iron_drill_01",
+        "machineCount": 1.859965458,
+        "inputOrder": [],
+        "outputOrder": [
+          0
+        ],
+        "position": {
+          "x": 608,
+          "y": 2327
+        },
+        "settings": {}
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-mw2u82br-0",
+        "source": "n-mw2u7qhy-0",
+        "sourceIndex": 1,
+        "target": "n-mw2u82br-1",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2u8561-1",
+        "source": "n-mw2u7qhy-0",
+        "sourceIndex": 0,
+        "target": "n-mw2u8561-2",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 3990,
+            "y": 988
+          },
+          {
+            "x": 3990,
+            "y": 1508
+          },
+          {
+            "x": 2907,
+            "y": 1508
+          },
+          {
+            "x": 2907,
+            "y": 1573
+          },
+          {
+            "x": 1767,
+            "y": 1573
+          },
+          {
+            "x": 1767,
+            "y": 1807
+          },
+          {
+            "x": 1064,
+            "y": 1807
+          },
+          {
+            "x": 1064,
+            "y": 1651
+          }
+        ]
+      },
+      {
+        "id": "e-mw2u88xs-2",
+        "source": "n-mw2u8561-2",
+        "sourceIndex": 1,
+        "target": "n-mw2u88xs-3",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 1748,
+            "y": 1651
+          },
+          {
+            "x": 1748,
+            "y": 1365
+          }
+        ]
+      },
+      {
+        "id": "e-mw2u8keh-3",
+        "source": "n-mw2u88xs-3",
+        "sourceIndex": 0,
+        "target": "n-mw2u8keh-4",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 2318,
+            "y": 1365
+          },
+          {
+            "x": 2318,
+            "y": 1404
+          }
+        ]
+      },
+      {
+        "id": "e-mw2u9ayy-4",
+        "source": "n-mw2u9ayy-c7",
+        "sourceIndex": 0,
+        "target": "n-mw2u7qhy-0",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 2907,
+            "y": 624
+          },
+          {
+            "x": 2907,
+            "y": 741
+          },
+          {
+            "x": 3439,
+            "y": 741
+          },
+          {
+            "x": 3439,
+            "y": 936
+          }
+        ]
+      },
+      {
+        "id": "e-mw2u9ltj-5",
+        "source": "n-mw2u8keh-4",
+        "sourceIndex": 1,
+        "target": "n-mw2u9ltj-c8",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 2907,
+            "y": 1456
+          },
+          {
+            "x": 2907,
+            "y": 1040
+          }
+        ]
+      },
+      {
+        "id": "e-mw2u9s98-6",
+        "source": "n-mw2u9ltj-c8",
+        "sourceIndex": 0,
+        "target": "n-mw2u7qhy-0",
+        "targetIndex": 1
+      },
+      {
+        "id": "e-mw2u9wwv-7",
+        "source": "n-mw2u8561-2",
+        "sourceIndex": 0,
+        "target": "n-mw2u8561-2",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 1577,
+            "y": 1703
+          },
+          {
+            "x": 1577,
+            "y": 1768
+          },
+          {
+            "x": 1159,
+            "y": 1768
+          },
+          {
+            "x": 1159,
+            "y": 1703
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-1u",
+        "source": "n-mw2ub08s-ib",
+        "sourceIndex": 1,
+        "target": "n-mw2u8keh-4",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ub0mk-1v",
+        "source": "n-mw2ub08u-kx",
+        "sourceIndex": 0,
+        "target": "n-mw2u8keh-4",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 3439,
+            "y": 1703
+          },
+          {
+            "x": 3439,
+            "y": 1209
+          },
+          {
+            "x": 2280,
+            "y": 1209
+          },
+          {
+            "x": 2280,
+            "y": 1456
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-1w",
+        "source": "n-mw2ub08u-lo",
+        "sourceIndex": 0,
+        "target": "n-mw2u9ayy-c7",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 5662,
+            "y": 624
+          },
+          {
+            "x": 5662,
+            "y": 715
+          },
+          {
+            "x": 2280,
+            "y": 715
+          },
+          {
+            "x": 2280,
+            "y": 546
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-1x",
+        "source": "n-mw2ub08u-kr",
+        "sourceIndex": 0,
+        "target": "n-mw2u9ayy-c7",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 2318,
+            "y": 1040
+          },
+          {
+            "x": 2318,
+            "y": 598
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-1y",
+        "source": "n-mw2ub08u-kr",
+        "sourceIndex": 0,
+        "target": "n-mw2u9ltj-c8",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 2318,
+            "y": 1040
+          },
+          {
+            "x": 2318,
+            "y": 741
+          },
+          {
+            "x": 2869,
+            "y": 741
+          },
+          {
+            "x": 2869,
+            "y": 936
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-1z",
+        "source": "n-mw2ub08s-i9",
+        "sourceIndex": 1,
+        "target": "n-mw2u9ltj-c8",
+        "targetIndex": 2,
+        "orthogonalTurns": [
+          {
+            "x": 1691,
+            "y": 1313
+          },
+          {
+            "x": 1691,
+            "y": 767
+          },
+          {
+            "x": 2337,
+            "y": 767
+          },
+          {
+            "x": 2337,
+            "y": 988
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-20",
+        "source": "n-mw2ub08s-ib",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08s-i9",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 1064,
+            "y": 1404
+          },
+          {
+            "x": 1064,
+            "y": 1339
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-21",
+        "source": "n-mw2ub08s-id",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08s-ib",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 513,
+            "y": 1066
+          },
+          {
+            "x": 513,
+            "y": 1430
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-22",
+        "source": "n-mw2ub08s-id",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08s-ix",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ub0mk-23",
+        "source": "n-mw2ub08u-jp",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-jp",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 2812,
+            "y": 234
+          },
+          {
+            "x": 2812,
+            "y": 325
+          },
+          {
+            "x": 2394,
+            "y": 325
+          },
+          {
+            "x": 2394,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-24",
+        "source": "n-mw2ub08s-ix",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-jp",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 1672,
+            "y": 1066
+          },
+          {
+            "x": 1672,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-25",
+        "source": "n-mw2ub08s-id",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-ka",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 513,
+            "y": 1066
+          },
+          {
+            "x": 513,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-26",
+        "source": "n-mw2ub08s-i9",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-kr",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 1710,
+            "y": 1365
+          },
+          {
+            "x": 1710,
+            "y": 1066
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-27",
+        "source": "n-mw2ub08u-ka",
+        "sourceIndex": 1,
+        "target": "n-mw2ub08u-kr",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 1064,
+            "y": 975
+          },
+          {
+            "x": 1064,
+            "y": 871
+          },
+          {
+            "x": 1634,
+            "y": 871
+          },
+          {
+            "x": 1634,
+            "y": 1014
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-28",
+        "source": "n-mw2u8keh-4",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-kr",
+        "targetIndex": 2,
+        "orthogonalTurns": [
+          {
+            "x": 2869,
+            "y": 1404
+          },
+          {
+            "x": 2869,
+            "y": 1547
+          },
+          {
+            "x": 1767,
+            "y": 1547
+          },
+          {
+            "x": 1767,
+            "y": 1118
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-29",
+        "source": "n-mw2ub08u-ks",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-kr",
+        "targetIndex": 3,
+        "orthogonalTurns": [
+          {
+            "x": 1710,
+            "y": 676
+          },
+          {
+            "x": 1710,
+            "y": 962
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-2a",
+        "source": "n-mw2ub08u-kb",
+        "sourceIndex": 2,
+        "target": "n-mw2ub08u-ks",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ub0mk-2b",
+        "source": "n-mw2u8keh-4",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-kx",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 2869,
+            "y": 1404
+          },
+          {
+            "x": 2869,
+            "y": 1703
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-2c",
+        "source": "n-mw2ub08u-lu",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-lo",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 5092,
+            "y": 429
+          },
+          {
+            "x": 5092,
+            "y": 624
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-2d",
+        "source": "n-mw2ub08u-jp",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-lu",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 4541,
+            "y": 234
+          },
+          {
+            "x": 4541,
+            "y": 403
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-2u",
+        "source": "n-mw2ub08s-ix",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08v-oc",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 1672,
+            "y": 1066
+          },
+          {
+            "x": 1672,
+            "y": 1768
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ub0mk-2v",
+        "source": "n-mw2ub08s-i9",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08v-oc",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 1710,
+            "y": 1365
+          },
+          {
+            "x": 1710,
+            "y": 1820
+          }
+        ]
+      },
+      {
+        "id": "e-mw2udm9d-2z",
+        "source": "n-mw2udm9d-u9",
+        "sourceIndex": 0,
+        "target": "n-mw2ub08u-lu",
+        "targetIndex": 1
+      },
+      {
+        "id": "e-mw2udr4l-30",
+        "source": "n-mw2udr4l-ua",
+        "sourceIndex": 0,
+        "target": "n-mw2udm9d-u9",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ue5bg-32",
+        "source": "n-mw2ue5bg-uc",
+        "sourceIndex": 0,
+        "target": "n-mw2udr4l-ua",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2uej8p-33",
+        "source": "n-mw2u9ayy-c7",
+        "sourceIndex": 2,
+        "target": "n-mw2ue5bg-uc",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 2869,
+            "y": 572
+          },
+          {
+            "x": 2869,
+            "y": 481
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ueocs-34",
+        "source": "n-mw2ub08u-jp",
+        "sourceIndex": 0,
+        "target": "n-mw2ue5bg-uc",
+        "targetIndex": 0,
+        "orthogonalTurns": [
+          {
+            "x": 2869,
+            "y": 234
+          },
+          {
+            "x": 2869,
+            "y": 429
+          }
+        ]
+      },
+      {
+        "id": "e-mw2uf71a-35",
+        "source": "n-mw2uf71a-ud",
+        "sourceIndex": 0,
+        "target": "n-mw2u82br-1",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 4009,
+            "y": 2015
+          },
+          {
+            "x": 4009,
+            "y": 988
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ufayw-36",
+        "source": "n-mw2ubv1o-rb",
+        "sourceIndex": 0,
+        "target": "n-mw2uf71a-ud",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ufnki-37",
+        "source": "n-mw2ub08v-oc",
+        "sourceIndex": 0,
+        "target": "n-mw2uf71a-ud",
+        "targetIndex": 2,
+        "orthogonalTurns": [
+          {
+            "x": 3439,
+            "y": 1794
+          },
+          {
+            "x": 3439,
+            "y": 1937
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ufqm2-38",
+        "source": "n-mw2ufqm2-ue",
+        "sourceIndex": 0,
+        "target": "n-mw2uf71a-ud",
+        "targetIndex": 3,
+        "orthogonalTurns": [
+          {
+            "x": 3439,
+            "y": 2236
+          },
+          {
+            "x": 3439,
+            "y": 2041
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ug28t-39",
+        "source": "n-mw2ug28t-uf",
+        "sourceIndex": 0,
+        "target": "n-mw2uf71a-ud",
+        "targetIndex": 1,
+        "orthogonalTurns": [
+          {
+            "x": 3458,
+            "y": 2483
+          },
+          {
+            "x": 3458,
+            "y": 2093
+          }
+        ]
+      },
+      {
+        "id": "e-mw2ug4x4-3a",
+        "source": "n-mw2ug4x4-ug",
+        "sourceIndex": 0,
+        "target": "n-mw2ug28t-uf",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ug783-3b",
+        "source": "n-mw2ug783-uh",
+        "sourceIndex": 0,
+        "target": "n-mw2ug4x4-ug",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2uggtn-3d",
+        "source": "n-mw2uggtn-uj",
+        "sourceIndex": 0,
+        "target": "n-mw2ug783-uh",
+        "targetIndex": 0
+      },
+      {
+        "id": "e-mw2ugjq3-3e",
+        "source": "n-mw2ugjq2-uk",
+        "sourceIndex": 0,
+        "target": "n-mw2uggtn-uj",
+        "targetIndex": 0
+      }
+    ],
+    "globalSettings": {
+      "global_pollution": 10,
+      "current_month": "January",
+      "difficulty": "sandbox",
+      "oreNodesEnabled": false,
+      "showVariantLimited": false
+    }
+  }
+}
