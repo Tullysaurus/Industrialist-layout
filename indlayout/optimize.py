@@ -191,7 +191,7 @@ def optimize(problem, time_budget=180.0, seed=0, wire_weight=1.0, router_kw=None
                                             max(5.0, min(left() - 5.0, 150.0)), log)
         if sol.ok:
             raw = sol.area
-            sol = sol.compact(mixed, log=log)
+            sol = sol.compact(mixed, log=log, deadline=t_start + time_budget * 1.1 + 10)
             sol.ok, sol.n_over = True, 0
             log(f"  ROUTED. footprint {raw} -> {sol.area} tiles after compaction")
             if best is None or not best.ok or sol.area < best.area:
