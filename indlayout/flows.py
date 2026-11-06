@@ -19,6 +19,7 @@ from collections import defaultdict, deque
 from dataclasses import dataclass, field
 
 EPS = 1e-9
+BUFFER_TOLERANCE = 0.01   # shortfalls below 1 % of an input are treated as absorbed by its buffer
 
 
 @dataclass
@@ -380,7 +381,9 @@ class Analysis:
                 for k, ti in enumerate(nf.terms):
                     if ti.t.direction == "input":
                         full = (ti.t.rate or 0.0) / max(self.planned_run[ti.t.inst], EPS)
-                        new_frac[(ti.t.inst, nf.ni, k)] = min(1.0, deliv[k] / full) if full > EPS else 1.0
+                        f = min(1.0, deliv[k] / full) if full > EPS else 1.0
+                        # input buffers absorb tiny imbalances (and the planner's own rounding)
+                        new_frac[(ti.t.inst, nf.ni, k)] = 1.0 if f >= 1.0 - BUFFER_TOLERANCE else f
             frac = new_frac
             # a machine runs as fast as its scarcest piped input; raw sources produce exactly the plan.
             # Outputs are assumed to drain (excess backs up in the pipe but does not slow the machine here).

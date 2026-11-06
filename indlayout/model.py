@@ -611,29 +611,17 @@ def load_problem(save_path, machines_path, recipes_path, cfg_overrides=None) -> 
 
 
 def _valve_chain(terms, nodes, instances):
-    """Split a pipe network's terminals into (sources, outlets) for a valve manifold.
-
-    Every outlet gets exactly its planned share. A consumer group whose machines have no other piped input
-    shares one outlet (uneven sharing inside it loses nothing); other machines get an outlet each."""
+    """Split a pipe network's terminals into (sources, outlets) for a valve manifold: every consuming
+    machine gets its own outlet with exactly its planned share (uneven sharing inside a machine group
+    carries over into the next pipe network, so groups are not shared)."""
     sources = [t for t in terms if t.direction == "output"]
     sinks = [t for t in terms if t.direction == "input"]
     if not sources or len(sinks) < 2:
         return None
-    by_node = defaultdict(list)
+    per = defaultdict(list)
     for t in sinks:
-        by_node[instances[t.inst][0]].append(t)
-    outlets = []
-    for ni_, ts in sorted(by_node.items()):
-        node = nodes[ni_]
-        piped_inputs = [s_ for (d, _), s_ in node.slots.items()
-                        if d == "input" and s_.ports and (s_.connected or 0) - s_.self_feed > 1e-9]
-        if len(piped_inputs) <= 1:
-            outlets.append(sorted(ts, key=lambda t: t.inst))
-        else:
-            per = defaultdict(list)
-            for t in ts:
-                per[t.inst].append(t)
-            outlets.extend(per[i] for i in sorted(per))
+        per[t.inst].append(t)
+    outlets = [per[i] for i in sorted(per)]
     if len(outlets) < 2:
         return None
     return sources, outlets
